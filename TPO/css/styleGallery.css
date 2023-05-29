@@ -1,0 +1,181 @@
+.contGrid {
+    display: grid;
+    grid-template-columns: 0.6fr 4fr ;
+    grid-template-rows: max-content;
+  }
+  
+  /* .gallery-container {
+    position: relative;
+    top: 100px;
+  } */
+
+  .dotMaps {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
+  .contGrid #tituloMapas {
+    position: absolute;
+    top: 50%;
+    margin-left: 2rem;
+    font-size: 40px;
+    font-family: 'VALORANT';
+    color: #fff;
+  }
+  
+  .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 18rem;
+    font-family: 'VANDAL';
+    font-size: 20px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .card h2 {
+    position: absolute;
+    margin-top: -17rem;
+    margin-left: 29rem;
+  }
+  
+  .gallery-item, .map-info {
+    width: 30%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 60%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .desc-map {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 40%;
+    right: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.prev, .next {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 17rem;
+    transform: translateY(-50%);
+}
+  
+  .prev {
+    left: 600px;
+  }
+  
+  .next {
+    right: 600px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration:0.2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .6}
+    to {opacity:1}
+  }
+  
+  .cards {
+    /* position: relative; */
+    bottom: 50%;
+    background-color: green;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .card p {
+    margin-top: 440px;
+  }
+  
+  .gallery-item-1, .gallery-item-2, .gallery-item-3, .gallery-item-4, .gallery-item-5, .gallery-item-6, .gallery-item-7, .gallery-item-8, .gallery-item-9 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
+    width: 600px;
+    height: 400px;
+    opacity: 1;
+    bottom: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .gallery-item-1:hover, .gallery-item-2:hover, .gallery-item-3:hover, .gallery-item-4:hover, .gallery-item-5:hover, .gallery-item-6:hover, .gallery-item-7:hover, .gallery-item-8:hover, .gallery-item-9:hover{
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  .map-info-1, .map-info-2, .map-info-3, .map-info-4, .map-info-5, .map-info-6, .map-info-7, .map-info-8, .map-info-9 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
+    width: 600px;
+    height: 400px;
+    opacity: 1;
+    bottom: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .desc-map-1, .desc-map-2,  .desc-map-3, .desc-map-4, .desc-map-5, .desc-map-6, .desc-map-7, .desc-map-8, .desc-map-9 {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .center {
+    /* position: absolute; */
+    left: 3%;
+    top: 65%;
+  }
+  
+  .dot {
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 0 2px;
+    margin-bottom: 10px;
+    bottom: 0%;
+    background-color: #bbbbbb00;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+    font-family: 'VALORANT';
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .dot:hover {
+    animation-name: fade;
+    animation-duration: .8s;
+    text-decoration: underline;
+  }

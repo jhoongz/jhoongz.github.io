@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styleContacto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  </head>
+  <body>
+    <!-- <header>
+      <img src="./img/logo g14 python.png" class="logo" alt="Main Logo">
+      <h1 class="titulo">Contactanos</h1>
+    </header> -->
+    <header>
+      <div class="logo">
+        <img src="../img/logo g14 python.png" alt="Logo de ejemplo">
+      </div>
+      <div class="titulo">
+        <!-- <h1>CONTACTANOS</h1> -->
+      </div>
+      <div class="navbar content-img">
+          <nav>
+            <ul>
+              <li>
+                  <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+              </li>
+              
+              <li>
+                  <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h2>Contacto</h2>
+          <form action="" class="formulario" id="formulario"> 
+            <div class="form__nombre" id="grupo__nombre">
+              <label for="nombre" class="form__label">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="input-icono" placeholder="Ingrese su nombre"/>
+              <i class="quitar-icono fa-solid fa-circle-check"></i>
+              <p class="mensaje-error">El nombre debe contener solo letras y como maximo 40 caracteres"</p>
+            </div>
+            <div class="form__correo" id="grupo__correo">
+              <label for="correo">Correo Electrónico:</label>
+              <input type="email" name="correo" id="correo" class="input-icono" placeholder="Ingrese su correo electrónico"/>
+              <i class="quitar-icono fa-solid fa-circle-check"></i>
+              <p class="mensaje-error">El Correo Electrónico no es valido</p>
+            </div>  
+            <div class="form__telefono" id="grupo__telefono">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" name="telefono" id="telefono" class="input-icono" placeholder="Ingrese su número de teléfono"/>
+              <i class="quitar-icono fa-solid fa-circle-check"></i>
+              <p class="mensaje-error">El telefono debe contener solo números</p>
+            </div>
+            <div class="form__mensaje" id="grupo__mensaje">
+              <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+              <i class="quitar-icono fa-solid fa-circle-check"></i>
+              <p class="mensaje-error">Debe escribir un mensaje</p>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+            <div class="form_enviar">
+                <input type="submit" value="Enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+            <h4>Mas Información</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp; Baker Street</li>
+                <li><i class="fas fa-phone"></i>&nbsp; &nbsp; (111) 111 111 111</li>
+                <li><i class="fas fa-envelope-open-text"></i>&nbsp; &nbsp; contact@website.com</li>
+            </ul>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+            <p>Company.com</p>
+            <br>
+            <!-- API -->
+            <button class="dolarTitle" id="exchangeButton">Valor Dolar</button>
+            <ul class="dolarSi" id="exchangeList"></ul>
+        </div> 
+
+      </div>
+    </div>
+    <script src="../scripts/scriptsContacto.js"></script>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

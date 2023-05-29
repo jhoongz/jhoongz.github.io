@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "VALORANT";
+  src: url(https://www.dafont.com/es/valorant.font) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'VANDAL';
+  src: url(https://www.dafont.com/es/vandal.font) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818; 
+}
+
+/* header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #333;
+   
+  border-bottom: rgb(80, 78, 78) solid 2px;
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #333;
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 40px;
+    border-bottom: rgb(80, 78, 78) solid 2px;
+    font-family: 'VALORANT'
+}
+
+.logo {
+  margin-right: 40px;
+  padding-left: 50px;
+}
+
+.logo img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.titulo {
+    flex: 1;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.navbar {
+  margin-right: 20px;
+  padding-top: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.content-img {
+  position: relative;
+  display: inline-block;
+}
+
+li .fa-solid {
+  color: #B70E21;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #979393;
+  font-family: 'VALORANT';
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    width: 100%;
+}   
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+div {
+  position: relative;
+  font-family: 'VANDAL';
+}  
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ccc;
+  }
+
+  input[type="submit"] {
+    background: #B70E21;
+    border: 2px solid #a52d3e;
+    color: antiquewhite;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #e40a0a;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+
+form label {
+    border-bottom: #383737 solid 2px;
+    color: #979393;
+    font-weight: 600;
+}
+
+/* form .input-icono {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: none;
+} */
+
+form i.fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: green;
+}
+
+form .quitar-icono {
+  display: none;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+  font-size: larger;
+  text-align: center;
+  margin-top: 30px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.mensaje-error {
+  display: none;
+  background: #f66060;
+  color: #ccc;
+  font-size: large;
+  height: 25px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+/* CONTACT INFO */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info .info {
+  padding-top: 30px;
+}
+
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #ccc;
+}
+
+.contact-info h4 {
+  color: #e40a0a;
+  font-size: large;
+} 
+
+/* reglas para la validacion */
+.mostrar-icono {
+  display: block;
+  color: green;
+}
+
+.mostrar__mensaje-error {
+  display: block;
+}
+
+.form_enviar {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__mensaje-exito {
+  margin-top: 20px;
+  font-size: large;
+  color: #1ed12d;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+.formulario__grupo-correcto .fa-solid {
+  display: block;
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+/* .formulario__grupo-incorrecto  {
+	color: #bb2929;
+} */
+
+.formulario__grupo-incorrecto  {
+	color: #bb2929;
+	opacity: 1;
+} 
+
+.formulario__grupo-incorrecto input {
+	border: 5px solid #bb2929;
+  
+}
+
+.formulario__grupo-incorrecto p {
+	display: block;
+}
+
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  body {
+      padding: 0 4em;
+  }
+
+  header {
+    padding: 0;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+
+/* API */
+
+.dolarTitle {
+  margin: 25px 125px;
+  padding: 5px 10px;
+  font-family: 'VALORANT';
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #ccc;
+}
+
+.dolarTitle:hover{
+  border: 2px;
+  background-color: #B70E21;
+}
+
+.dolarsi {
+  list-style: none;
+  padding: 0;
+}
+
+.dolarSi li {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+}

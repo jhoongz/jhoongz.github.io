@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "VALORANT";
+    src: url(https://www.dafont.com/es/valorant.font) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'VANDAL';
+    src: url(https://www.dafont.com/es/vandal.font) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+  body {
+    background-image: url(/TPO/img/Fondo/VALORANT_Logo_V_thumbnail.jpg);
+    background-size: cover;
+  }
+
+  /* Estilos header, menu y logo*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'VALORANT';
+    /* background-color: #f2f2f2; */
+    /* padding: 10px; */
+  }
+
+#marca img {
+    width: 130px;
+    /* height: 70px; */
+    float:left;
+    margin-left: 100px;
+}
+
+#navbar {
+    width: 400px;
+    height: 40px;
+    float:right;
+    margin-top: 20px;
+    margin:  auto 100px;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    padding: 10px;
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 95px; 
+    margin-left: 20px;
+    margin-top: -30px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(60deg, #ff4655, #f8061b);
+    animation: flicker 3s linear infinite;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+  }
+
+  @keyframes flicker {
+    0%,
+    12% {
+      color: #0e0f10;
+      box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+    }
+    12%,
+    19% {
+      color: #ffffff;
+      box-shadow: none;
+    }
+    19%,
+    26% {
+      color: #0e0f10;
+      box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+    }
+    26%,
+    29% {
+      color: #ffffff;
+      box-shadow: none;
+    }
+    29%,
+    44% {
+      color: #0e0f10;
+      box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+    }
+    44%,
+    54% {
+      color: #ffffff;
+      box-shadow: none;
+    }
+    54%,
+    100% {
+      color: #0e0f10;
+      box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+    }
+  }
+
+
+
+/* Estilos section article, mapas */
+
+#contenido_principal {
+    width: 90%px;
+    height: auto;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 20px;
+}
+
+#titulo_principal {
+    font-family: 'VALORANT';
+    font-size: 2rem;
+    font-weight: 600;
+    color: beige;
+}
+
+#contenido_articulo {
+    font-family: 'VANDAL';
+    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#tituloMapas {
+    font-size: 1.9rem;
+    margin-top: -7%;
+}
+
+#titulo_secundario {
+    font-family: 'VALORANT';
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 600;
+    color: azure;
+}
+
+#navegacion h2 {
+    border-top: #747171 solid 1px;
+    padding-top: 20px;
+}
+
+#contenedor_mapas {
+    width: 40px;
+}
+
+#center span {
+    cursor: pointer;
+    /* position: relative; */
+    text-align: center;
+    top: 15px;
+    height: 30px;
+    width: 90px;
+    margin: 0 2px;
+    margin-bottom: 8px;
+    bottom: 0%;
+    background-color: #830e0e00;
+    border-radius: 15%;
+    display: block;
+    transition: background-color 0.6s ease;
+    font-family: 'VALORANT';
+    font-size: 1.3rem;
+    color: #F4F1F0;
+}
+
+#center span:hover {
+    animation-name: fade;
+    animation-duration: .8s;
+    text-decoration: underline;
+    background-color: #771018;
+  }
+
+  #contenedor_mapas #aas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 4rem;
+    background-color: #03e9f4;
+    
+    
+  }
+
+/* Estilos aside y las opciones del juego*/
+#navegacion {
+    width: 90%px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    /* margin-bottom: 50px; */
+}
+
+#navegacion h2 {
+    margin-left: 25px;
+}
+
+
+#navegacion .titleMod {
+    position: relative;
+    top: 8px;
+    left: 35%;
+    transform: translate(50%);
+    font-size: 25px;
+    color: #f8efef;
+    font-family: 'VALORANT';
+    font-weight: 700;
+}
+
+#navegacion p {
+    font-family: 'VANDAL';
+    font-size: 20px;
+    color: #dddbda;
+    text-justify: inter-cluster;
+    text-align: justify;
+    padding: 10px;
+}
+
+.contenedor_opciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor_opciones > div {
+    flex: 1 1 30px;
+    margin: 10px;
+}
+
+.titleMod {
+    margin-right: 50%;
+}
+
+.op1 {
+    background-color: #747171;
+    border-radius: 15px;
+}
+.op2 {
+    background-color: #747171;
+    border-radius: 15px;
+}
+.op3 {
+    background-color: #747171;
+    border-radius: 15px;
+}
+.op4 {
+    background-color: #747171;
+    border-radius: 15px;
+}
+.op5 {
+    background-color: #747171;
+    border-radius: 15px;
+}
+
+
+/* Estilos al footer */
+
+#pie-pagina {
+    font-family: 'VALORANT';
+    width: 100%;
+    background: #0a141d;
+    border-top: #03e9f4 solid 1px;
+}
+
+#pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-gap: 30px;
+    padding: 20px 0px;
+}
+
+#pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pie-pagina .grupo-1 .box figure img {
+    width: 230px;
+    margin-top: 10px;
+}
+
+#pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pie-pagina .grupo-1 .social-icons-container a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 2rem;
+    color: #dd4854;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.social-icons-container {
+    text-align: center;
+}
+
+#pie-pagina .grupo-1 .social-icons-container a:hover {
+    color: #fff;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 50%;
+    left: 40%;
+    float:right;
+    margin-top: 20px;
+    margin:  auto 100px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+#pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#pie-pagina .grupo-2 small {
+    font-size: 1.3rem;
+}
+
+@media all and (min-width:600px) and (max-width: 1023px) {
+    #marca img {      
+        margin-left: 40px;
+    }
+
+    #navbar ul li a {
+        font-size: 13px;
+    }
+
+    #titulo_principal {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: beige;
+        margin-left: -30px;
+    }
+
+    #contenido_articulo {
+        font-size: 1.2rem;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        margin-right: -30px;
+    }
+
+    .contGrid #tituloMapas {
+        margin-top: 60%;
+        font-size: 30px;
+    }
+
+    .contGrid .dotMaps {
+        margin-top: 50px;
+    }
+
+    .contGrid .dot {
+        font-size: 20px;
+        margin-top: 20px;
+        
+    }
+
+    #navegacion #titulo_secundario {
+        font-size: 23px;
+    }
+
+    #navegacion .titleMod {
+        /* position: relative; */
+        top: 8px;
+        left: 20%;
+        transform: translate(10%);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    #pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        padding: 35px 0px;
+    }
+} 
+
+
+
+
+@media (max-width: 559px) {
+    .menu-icon {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 100px;
+        left: -850px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #menu-toggle:checked ~ ul {
+        left: 0;
+    }
+
+    #navegacion #titulo_secundario {
+        font-size: 15px;
+        color: #03e9f4;
+    }
+}

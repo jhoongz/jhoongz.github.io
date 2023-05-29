@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Valorant</title>
+    <link rel="stylesheet" href="/TPO/css/styleAbout.css">
+    <link rel="stylesheet" href="/TPO/css/styleGallery.css">
+    <!-- FontAwesonee -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div id="marca">
+            <img src="/TPO/img/logo g14 python.png"  alt="logo_grupo">
+        </div>
+        <nav id="navbar"> <!--botonera_principal"-->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pags/agents.html">AGENTES</a></li>
+                <li><a href="../pags/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido_principal">
+        <article id="informacion"> <!--presentacion"-->
+            <h1 id="titulo_principal">Desarrollo del Juego</h1>
+            <p id="contenido_articulo">
+                Valorant fue desarrollado y publicado por Riot Games, el estudio detrás de League of Legends. El desarrollo comenzó en 2014, dentro de su división de investigación y desarrollo. A Joe Ziegler, director de juego de Valorant, se le atribuye la idea inicial de Valorant mientras formulaba posibles juegos con otros desarrolladores de Riot. David Nottingham es el director creativo de Valorant. Trevor Romleski, antiguo diseñador de League of Legends] y Salvatore Garozzo, antiguo jugador profesional y diseñador de mapas para Counter-Strike: Global Offensive] son diseñadores de juego para Valorant. Moby Francke, antiguo desarrollador de Valve, que ha sido diseñador de arte y personajes para Half-Life 2 y Team Fortress 2, es el director de arte. Valorant se desarrolló con dos enfoques principales: hacer que los shooters tácticos y los deportes electrónicos fueran más accesibles para los nuevos jugadores, y crear un juego que atrajera a una gran escena competitiva, al tiempo que resolvía muchos de los puntos de crítica expresados por los jugadores profesionales de los juegos del género.
+            </p>
+        </article>
+    </section>    
+            
+        <!--galeria -->
+        <div class="contGrid">
+            <h2 id ="tituloMapas">Mapas</h2>
+            <section class="dotMaps">
+                <div class="center">
+                    <span class="dot" onclick="currentSlide(1)">BIND</span>
+                    <span class="dot" onclick="currentSlide(2)">SPLIT</span>
+                    <span class="dot" onclick="currentSlide(3)">HAVEN</span>
+                    <span class="dot" onclick="currentSlide(4)">ASCENT</span>
+                    <span class="dot" onclick="currentSlide(5)">ICEBOX</span>
+                    <span class="dot" onclick="currentSlide(6)">BREEZE</span>
+                    <span class="dot" onclick="currentSlide(7)">FRACTURE</span>
+                    <span class="dot" onclick="currentSlide(8)">PEARL</span>
+                    <span class="dot" onclick="currentSlide(9)">LOTUS</span>
+                </div>
+            </section>
+        
+    
+            <div class="gallery">
+                <div class="gallery-container">
+                    
+                    <div class="cards">
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-1" id="selector-1">
+                            <h2>BIND</h2>
+                            <img src="/TPO/img/Maps/Bind/Bind.png" class="gallery-item gallery-item-1">
+                            <img src="/TPO/img/Maps/Bind/BindMini.png" class="map-info map-info-1">
+                            <p class="desc-map desc-map-1 "> Bind se ambienta en Rabat, Marruecos y en él tenemos dos teletransportadores que nos permiten rotar con facilidad de la zona “A” a “B” y viceversa. Sin embargo, al ser de un solo sentido y dejarnos siempre en la misma ubicación será fácil encontrar a quien los use. Por ello, es un mapa muy bueno para los flanqueos.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-2" id="selector-2">
+                            <h2>SPLIT</h2>
+                            <img src="/TPO/img/Maps/Split/Split.png" class="gallery-item gallery-item-2">
+                            <img src="/TPO/img/Maps/Split/SplitMini.png" class="map-info map-info-2">
+                            <p class="desc-map desc-map-2">Split ambientado en Tokio, Japón. Tenemos dos ubicaciones separadas por un centro elevado que dispone de dos zonas de cuerdas para facilitar el movimiento entre ellas. Es una auténtica pesadilla para los atacantes, sobre todo, por la cantidad de zonas con cuello de botella que favorece a los defensores.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-3" id="selector-3">
+                            <h2>HAVEN</h2>
+                            <img src="/TPO/img/Maps/Haven/Haven.png" class="gallery-item gallery-item-3">
+                            <img src="/TPO/img/Maps/Haven/HavenMini.png" class="map-info map-info-3">
+                            <p class="desc-map desc-map-3">Haven se encuentra en Timbu, Bután. Es el primer mapa de VALORANT que nos presenta tres zonas diferentes para plantar la bomba. Por ello, las partidas en este mapa son un poco más complejas para los defensores que tienen que diversificarse para cubrir los tres puntos.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-4" id="selector-4">
+                            <h2>ASCENT</h2>
+                            <img src="/TPO/img/Maps/Ascent/Ascent.png" class="gallery-item gallery-item-4">
+                            <img src="/TPO/img/Maps/Ascent/AscentMini.png" class="map-info map-info-4">
+                            <p class="desc-map desc-map-4">Ascent representa a Venecia, Italia. Fue el primer mapa que se lanzó tras la versión beta de VALORANT. Se caracteriza por su patio abierto pensado para los combates de posicionamiento y desgaste. Además, divide las diferentes localizaciones del mapa.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-5" id="selector-5">
+                            <h2>ICEBOX</h2>
+                            <img src="/TPO/img/Maps/Icebox/Icebox.png" class="gallery-item gallery-item-5">
+                            <img src="/TPO/img/Maps/Icebox/IceboxMini.png" class="map-info map-info-5">
+                            <p class="desc-map desc-map-5">Icebox está ambientado en las frías tundras del norte de Rusia y tiene muchos recovecos tanto para los atacantes como para los defensores gracias a los contenedores. No obstante, algunas veces puede darnos la sensación de estar en un laberinto. Para la zona de A podremos usar las tirolinas, pero la zona de B es una localización abierta por lo que no podremos usar nada del entorno para protegernos.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-6" id="selector-6">
+                            <h2>BREEZE</h2>
+                            <img src="/TPO/img/Maps/Breeze/Breeze.png" class="gallery-item gallery-item-6">
+                            <img src="/TPO/img/Maps/Breeze/BreezeMini.png" class="map-info map-info-6">
+                            <p class="desc-map desc-map-6">Breeze se puede encontrar en el Océano Atlántico es uno de los mapas de VALORANT más idílicos. Nos presenta dos zonas de bombas extremadamente grandes con una gran variedad de formas de llegar a ella.Será muy importante que vigilemos nuestros flancos, sobre todo, en la zona de ventilación que puede sorprender a cualquiera.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-7" id="selector-7">
+                            <h2>FRACTURE</h2>
+                            <img src="/TPO/img/Maps/Fracture/Fracture.png" class="gallery-item gallery-item-7">
+                            <img src="/TPO/img/Maps/Fracture/FractureMini.png" class="map-info map-info-7">
+                            <p class="desc-map desc-map-7">Fracture esta ubicado en Nuevo Mexico, EEUU y esta inspirado por el Abismo de Helm del Señor de los Anillos, Fracture fue una vez una instalación de alto secreto que quedó dividida tras un experimento fallido con Radianita. Al tener dos zonas claramente diferenciadas las opciones de llegar a ella son diferentes al igual que la forma que tenemos para atacar o defenderla. Eso sí, cuidado con los flancos.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-8" id="selector-8">
+                            <h2>PEARL</h2>
+                            <img src="/TPO/img/Maps/Pearl/Pearl.png" class="gallery-item gallery-item-8">
+                            <img src="/TPO/img/Maps/Pearl/PearlMini.png" class="map-info map-info-8">
+                            <p class="desc-map desc-map-8">Pearl es un mapa que esta por debajo de la superficie en una cúpula bajo el agua en Lisboa, Portugal. Pearl es el primer mapa tradicional de VALORANT debido a que no presenta elementos dinámicos en él tenemos tres calles. Aquí lo único que importa es la geometría. Al estar muy bien conectado deberemos de tener en cuenta si estamos en la zona central estrecha o en las zonas laterales más largas.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="slide fade">
+                        <label class="card" for="item-9" id="selector-9">
+                            <h2>LOTUS</h2>
+                            <img src="/TPO/img/Maps/Lotus/Lotus.png" class="gallery-item gallery-item-9">
+                            <img src="/TPO/img/Maps/Lotus/LotusMini.png" class="map-info map-info-9">
+                            <p class="desc-map desc-map-9">Lotus ubicado en las montañas Sahyadri, India es el primer mapa de VALORANT que incluye elementos arquitectónicos, junto con nuevas mecánicas (puertas giratorias, una puerta/muro destructible). También cuenta con tres zonas para plantar y cada una de ellas tiene sus propias particularidades. El mapa puede parecer un laberinto al principio debido a las diferentes formas de viajar que se suman, además, todos los rincones del mapa que nos obligarán a estar pendiente de nuestros pasos.</p>
+                        </label>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside id="navegacion"> <!--complementario"-->
+            <h2 id="titulo_secundario">Modos de Juego</h2>
+            <div class="contenedor_opciones">
+                <div class="op1">
+                    <span class="titleMod">Normal</span>
+                    <p>En este modo de juego las partidas es donde empiezas como principiante y sigues jugando si quieres practicar o simplemente divertirte. Una partida sin clasificar es una experiencia 5v5 en la que gana el primer equipo que llegue a 13 rondas, con una ronda de muerte súbita si la partida termina en un 12-12.</p>
+                </div>
+                <div class="op2">
+                    <span class="titleMod">Competitivo</span>
+                    <p>Es donde todos los jugadores van a mejorar sus habilidades y a mostrar su rango para el Acto en curso. La partida termine en un tiempo extra de 12-12, en el que un equipo tendrá que ganar 2 rondas una tras otra. Y si así lo eligen los jugadores, la ronda puede terminar en un empate. Competitivo también tiene el sistema de clasificación y distribución. </p>                    
+                </div>
+                <div class="op3">
+                    <span class="titleMod">Deathmatch</span>
+                    <p>El modo Deathmatch no tiene habilidades, el objetivo principal de este modo de juego es la puntería. Termina cuando alguien llega a 40 muertes o cuando han pasado 9 minutos.</p>
+                </div>
+                <div class="op4">
+                    <span class="titleMod">Premier</span>
+                    <p>En este modo es igual que el competitivo pero es en equipo y con posibilidades de clasificar a torneos profesionales.</p>
+                </div>
+                <div class="op5">
+                    <span class="titleMod">Modo de Practica</span>
+                    <p>Los modos de práctica de Valorant son los más infravalorados y por una razón. Aunque pueden ayudar a los principiantes a dominar el juego. Ahí es donde todo el mundo puede entrenar su puntería y sus reflejos con las herramientas proporcionadas.</p>
+                </div>
+            </div>
+        </aside>
+    <!-- </section>  -->
+    <footer id="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <img src="../assent/img/Logos/logo-g14-4.png" alt="" class="logopag" width="200px">
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="social-icons-container">
+                    <a href="" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="social-icon"><i class="fa-brands fa-github"></i></a>  
+                </div>    
+            </div>
+            <div class="box">
+                <div class="menu">
+                    <ul class="footer-menu-container">
+                        <li class="menu-item">Acerca del Juego</li>
+                        <li class="menu-item">Agentes</li>
+                        <li class="menu-item">Contenido Descargable</l>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small class="copyright">&copy;2023, Valorant. Grupo 14 - FullStack</small>
+        </div> 
+    </footer>
+<script src="/TPO/scripts/scriptsAbout.js"></script>       
+</body>
+</html>

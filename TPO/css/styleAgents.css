@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "VALORANT";
+  src: url(https://www.dafont.com/es/valorant.font) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'VANDAL';
+  src: url(https://www.dafont.com/es/vandal.font) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 700px){
+  .imgAg {
+    width: 50%;
+  }
+
+  .titleRol {
+    left: 10%;
+  }
+
+  .rol {
+    left: 10%;
+  }
+
+  .titleBio {
+    left: 10%;
+  }
+
+  .bio {
+    left: 10%;
+    font-size: 50%;
+  }
+
+}
+
+body {
+  font-family: "VALORANT";
+  color: aliceblue;
+  background-image: url(../img/Fondo/VALORANT_logo4.jpg);
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 1px;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+  float: left;
+}
+
+nav ul li a {
+  font-size: 16px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(60deg, #ff4655, #f8061b);
+  animation: flicker 3s linear infinite;
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+@keyframes flicker {
+  0%,
+  12% {
+    color: #0e0f10;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+  }
+  12%,
+  19% {
+    color: #ffffff;
+    box-shadow: none;
+  }
+  19%,
+  26% {
+    color: #0e0f10;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+  }
+  26%,
+  29% {
+    color: #ffffff;
+    box-shadow: none;
+  }
+  29%,
+  44% {
+    color: #0e0f10;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+  }
+  44%,
+  54% {
+    color: #ffffff;
+    box-shadow: none;
+  }
+  54%,
+  100% {
+    color: #0e0f10;
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 80px #03e9f4;
+  }
+}
+
+.title1 {
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+}
+
+h2 {
+  position: relative;
+  font-family: 'VANDAL';
+  top: 60px;
+  margin-left: 40px;
+}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  top: 80px;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 270px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration:0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.nTxt {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin: 0 2px;
+  background-color: #bbbbbb00;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotMiniAgent {
+  display:inline;
+  position: relative;
+  top: 350px;
+  width: 600px;
+  height: 430px;
+  font-family: 'VALORANT';
+}
+
+.miniAgent {
+  width: 60px;
+  flex-grow:0;
+  object-fit: cover;
+  opacity: .8;
+}
+
+section .dot {
+  background: #0e0e0ede;
+}
+
+.name {
+  position: absolute;
+  bottom: 95%;
+  left: 25%;
+  color: #426e9c;
+}
+
+.titleRol {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  color: #ff4655;
+}
+
+.rol {
+  font-family: 'VANDAL';
+  font-size: 25px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+
+.rol img {
+  width: auto;
+  height: auto;
+  top: 50%;
+}
+
+.titleBio {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  color: #ff4655;
+}
+
+.bio {
+  width: 35%;
+  font-family: 'VANDAL';
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  top: 21%;
+  left: 50%;
+}
+
+.cont {
+  position: absolute;
+  top: 58%;
+  left: 45%;
+}
+
+.titleHabs{
+  position: absolute;
+  width: 60%;
+  bottom: 170%;
+  left: 45%;
+  color: #ff4655;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.list .fig {
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  width: 10%;
+}
+
+.butt {
+  display: inline;
+  position: relative;
+  background-color: #11111100;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+.fig{  
+  position: relative;
+}
+
+.fig figcaption {
+  display: none;
+  position: absolute;
+  width: 400px;
+  background: rgba(0, 0, 0, .1);
+  text-align: center;
+  font-family: 'VANDAL';
+  color: #f2f2f2;
+}
+
+.fig:hover figcaption{
+  display: block;
+}
+
+.cont img {
+  bottom: 0%;
+}
+
+.cont .s1{
+  position: absolute;
+  left: 5px;
+}
+
+.cont .s2{
+  position: absolute;
+  left: 105px;
+}
+
+.cont .s3{
+  position: absolute;
+  left: 210px;
+}
+
+.cont .s4{
+  position: absolute;
+  left: 310px; 
+}
+
+.s1 p, .s2 p, .s3, p, .s4 p {
+  text-align: justify;
+}
+
+.butt video {  
+  width: 500px;
+  height: 250px;
+  margin-left: -10%;
+}
+
+.cont img:hover {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  top: 370px;
+  right: 225px;
+  padding: 2rem 15%;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logopag {
+  width: 300px;
+  padding: 0;
+}
+
+.social-icons-container, .footer-menu-container {
+  display: flex;
+  position: relative;
+  bottom: 1px;
+  left: 100px;
+  margin-right: 1px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  position: relative;
+  bottom: 5px;
+  left: 100px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  /* border: 1px solid #000000; */
+  font-size: 2rem;
+  color: #dd4854;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  z-index: 3;
+}
+
+.social-icon:hover {
+  color: #f2f2f2;
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.copyright {
+  position: relative;
+  top: 50px;
+  right: 600px;
+  color: #ffffff;
+  opacity: 0.3;
+  text-align: center;
+}
